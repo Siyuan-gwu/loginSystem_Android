@@ -90,11 +90,6 @@ public class LoginActivity extends AppCompatActivity implements LogOutTimerUtil.
         final Button logoutButton = findViewById(R.id.logout);
         final ProgressBar loadingProgressBar = findViewById(R.id.loading);
 
-        String existUser = existlogin();
-        if (existUser == null) {
-            Toast.makeText(LoginActivity.this, R.string.timeout, Toast.LENGTH_LONG).show();
-        }
-
         logoutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
